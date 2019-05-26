@@ -1,0 +1,171 @@
+/* Header Section Start */
+header{
+    background-color: #141111;
+    width: 100%;
+    height: 110px;
+
+    & div.logo{
+        white-space: nowrap;
+        text-align: center;
+        width: 20%; 
+        height: 100%;
+
+        & .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        & img{
+            vertical-align: middle;
+        }
+    }
+}
+
+/* Header Section End */
+
+/* Container Section Start */
+section > div.container{
+    background:#E0E0E0 url("../styles/img/bg.png") repeat-x; 
+    min-height: 650px;
+}
+div.cart-container{
+    width: 40%;
+    margin:0px auto;
+    padding:7% 0;
+}
+h1.cart-basket-header{
+    font-weight: bold;
+    font-size: 34px;
+}
+div.header-text-info{
+    padding-top: 10px;
+}
+div.quantity{
+    float:left;
+    margin-left: 25px;
+    width: 70px;
+}
+div.quantity-txt{
+    float:left;
+}
+div.inc-dec-buttons{
+    float: left;
+}
+input.quantity-field{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+}
+.inc-dec-buttons{
+    position: relative;
+    left: 6px;
+}
+.inc-btn, .dec-btn{
+    color: #FFFFFF;
+    position: absolute;
+    background-color: #999999;
+    font-size: 11px;
+    padding: 0px 4px;
+    font-weight: bolder;
+    width: 15px;
+    text-align: center;
+    height: 13px;
+    cursor: pointer;
+}
+.dec-btn{
+    top:14px;
+}
+span.total-text{
+    width: 64.5%;
+    display: inline-block;
+    color:#8F8F8F;
+}
+.total-container{
+    margin-top: 20px;
+    & span{
+        color:#000000;
+        font-weight: bold;
+    }
+}
+.cost{
+    padding-left: 10px;
+}
+.sub-total{
+    margin-top: 20px;
+}
+.delete-button{
+    position: relative;
+    right: -10px;
+}
+.delete-button{
+    background-image:url("../styles/img/delete-32.png"); 
+    width: 18px;
+    height: 18px;
+    content: " ";
+    display: inline-block;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.buy-now{
+    margin-top: 30px;
+
+    & .buy-now-btn{
+        background-color: #000066;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-weight: bold;
+        float: right;
+    }
+}
+
+
+
+
+
+.Table
+    {
+        display: table;
+        margin-top: 20px;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+        height: 30px;
+    }
+    .Row
+    {
+        display: table-row;
+        & > .Cell:first-child{
+            width: 45%;
+        }
+    }
+    .Cell
+    {
+        display: table-cell;
+        border-bottom: solid;
+        border-width: thin;
+        padding: 15px 5px;
+        vertical-align: middle
+    }
+    .Row .Cell{
+        border: none;
+    }
+/* Container Section End */
