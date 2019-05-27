@@ -39,28 +39,19 @@ export const DOM = {
     total:document.getElementById('total')
 };
 
-const buyNow = () =>{
-    console.log(data);
-    // fetch(link, { headers: { "Content-Type": "application/json; charset=utf-8" }})
-    // .then(res => res.json()) // parse response as JSON (can be res.text() for plain response)
-    // .then(response => {
-    //     // here you do what you want with response
-    // })
-    // .catch(err => {
-    //     console.log("u")
-    //     alert("sorry, there are no results for your search")
-    // });
-};
-
 const link = document.querySelector('#buy-now-btn');
-link.addEventListener('click', () => {
-    fetch("/", { headers: { "Content-Type": "application/json; charset=utf-8" }})
-    .then(res => res.json()) // parse response as JSON (can be res.text() for plain response)
-    .then(response => {
-        // here you do what you want with response
+    link.addEventListener('click', () => {
+        console.log(data);
+        fetch("/", { 
+                headers: { "Content-Type": "application/json; charset=utf-8" },
+                method: "POST",
+                body: JSON.stringify(data)      
+            })
+        .then(res => res.json()) // parse response as JSON (can be res.text() for plain response)
+        .then(response => {
+            // here you do what you want with response
     })
     .catch(err => {
-        console.log("u");
-        alert("sorry, there are no results for your search");
+        alert("sorry, Cannot post the data. Please check URL");
     });
 });
